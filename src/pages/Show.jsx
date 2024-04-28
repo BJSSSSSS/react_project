@@ -64,8 +64,14 @@ export default function Show() {
     store.fetchData(params.id);
   }, []);
 
+  //if(!storedata)return<></>
+
   return (
     <div>
+      {/* <header>
+        <img src={store.data.image.large}/>
+        <h2>{store.data.name}({store.data.symbol})</h2>
+      </header> */}
       <AreaChart
         width={500}
         height={400}
